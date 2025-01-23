@@ -1,5 +1,7 @@
 import express from "express";
 
+
+
 const app = express.Router();
 
 app.get("/", (req, res) => {
@@ -25,4 +27,5 @@ app.post("/test/:id", (req, res) => {
     message: `Test For sampleRoute ${req.params.id}`,
   });
 });
+
 export default app;
